@@ -14,14 +14,10 @@ Technologies: tecnologias que han sido aprendidas. </br>
 About me: una seccion enfocada en hablar de mi perfil profesional y preferencias & </br>
 Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
 
-
-DeLord</br>
 👉[DeLord](https://delord.vercel.app/)</br>
 
-Break a Leg</br>
 👉[Break a Leg](https://break-a-leg.vercel.app/)</br>
 
-Tekni</br>
 👉[Tekni](https://tekniapp.netlify.app/)</br>
 
 # Deployment </br>
