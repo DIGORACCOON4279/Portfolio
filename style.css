@@ -781,14 +781,13 @@ body{
     max-width: 85%;
     margin:150px auto;
 }
-
 .mainContainer .technologiesContainer .foreFront{
     width:100%;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap:15px;
 }
