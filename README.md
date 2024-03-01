@@ -15,12 +15,15 @@ About me: una seccion enfocada en hablar de mi perfil profesional y preferencias
 Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
 
 ✔DeLord</br>
+![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f18ad5ec-f66b-4753-9bc5-ab594a1f66e0)</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/de8d1594-2397-4406-894c-56b3096ac375)</br>
 
 ✔Break a Leg</br>
+![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/fb08dbd3-90e4-4caf-8e5d-147eaa294490)</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/c434bc06-7942-4675-b4f4-57d8b95488fe)</br>
 
 ✔Tekni</br>
+![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/67a0acb6-6516-4877-906d-9712e9eced9b)</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f234bedc-0dbd-40eb-a16c-8e1e784a85da)</br>
 
 # Project Deployments </br>
