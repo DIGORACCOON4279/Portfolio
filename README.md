@@ -16,10 +16,13 @@ Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
 
 
 DeLord</br>
+👉[DeLord](https://delord.vercel.app/)</br>
 
 Break a Leg</br>
+👉[Break a Leg](https://break-a-leg.vercel.app/)</br>
 
 Tekni</br>
+👉[Tekni](https://tekniapp.netlify.app/)</br>
 
 # Deployment </br>
 Mi portfolio fue desplegado en Netlify</br>
