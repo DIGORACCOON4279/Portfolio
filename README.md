@@ -14,6 +14,17 @@ Technologies: tecnologias que han sido aprendidas. </br>
 About me: una seccion enfocada en hablar de mi perfil profesional y preferencias & </br>
 Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
 
+✔DeLord</br>
+![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/de8d1594-2397-4406-894c-56b3096ac375)</br>
+
+✔Break a Leg</br>
+![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/c434bc06-7942-4675-b4f4-57d8b95488fe)</br>
+
+✔Tekni</br>
+![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f234bedc-0dbd-40eb-a16c-8e1e784a85da)</br>
+
+# Project Deployments </br>
+
 👉[DeLord](https://delord.vercel.app/)</br>
 
 👉[Break a Leg](https://break-a-leg.vercel.app/)</br>
