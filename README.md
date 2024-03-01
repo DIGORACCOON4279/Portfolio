@@ -24,6 +24,7 @@ Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f234bedc-0dbd-40eb-a16c-8e1e784a85da)</br>
 
 # Project Deployments </br>
+Todos los proyectos estan para todos los dispositivos cellphone, tablet & laptop</br>
 
 👉[DeLord](https://delord.vercel.app/)</br>
 
