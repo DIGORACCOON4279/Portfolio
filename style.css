@@ -1164,4 +1164,9 @@ body{
 
 /* MediaQueries */
 
+/* Screen max 1000px */
 
+@media screen (max-width: 1000px){
+    
+
+}
