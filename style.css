@@ -795,6 +795,7 @@ body{
     gap:15px;
 }
 .mainContainer .technologiesContainer .foreFront .manSitting{
+    width:100%;
     filter: drop-shadow(10px 10px 10px #000000) ;
 }
 .mainContainer .technologiesContainer{
@@ -1022,6 +1023,7 @@ body{
     background: linear-gradient(to right, var(--secondaryColor) 0%, #ae00ff00);
 }
 .mainContainer .aboutMeContainer .figure .images .manLaptop{
+    width:100%;
     z-index: 9;
 }
 
@@ -1074,6 +1076,7 @@ body{
     left:75%;
 }
 .mainContainer .contactMe .manSittingContactMe .manLaptop{
+    width:100%;
     z-index: 9;
 }
 .mainContainer .contactMe .manSittingContactMe .orangeSquare,
