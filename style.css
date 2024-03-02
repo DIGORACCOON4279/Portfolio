@@ -57,6 +57,7 @@ body{
     backdrop-filter: blur(50px);
     position:fixed;
     top:0px;
+    overflow:hidden;
     z-index: 99;
 }
 .navbar .navbarMenu{
@@ -133,6 +134,10 @@ body{
 
 /* Hero Section */
 
+.mainContainer{
+    overflow:hidden;
+}
+
 .mainContainer .heroSection{
     width:85%;
     height: auto;
@@ -143,6 +148,10 @@ body{
     align-items: center;
     gap:30px;
     margin:50px auto 0px;
+}
+
+.mainContainer .backgroundHeroSection .background{
+    width:100%;
 }
 
 /* ArrowUp */
@@ -1220,7 +1229,20 @@ body{
     }
 }
 
+/* Screen max 750px */
 
+@media screen and (max-width: 750px){
+    .navbar{
+        max-width: 100%;
+        overflow:hidden;
+
+    }
+    .mainContainer{
+        max-width: 100%;
+        overflow:hidden;
+
+    }
+}
 
  /* Screen max 600px */
 
