@@ -131,14 +131,14 @@ body{
     font-weight: var(--semiBoldWeight);
 }
 
-/* Header Section */
+/* Hero Section */
 
 .mainContainer .heroSection{
     width:85%;
+    height: auto;
     max-width: 85%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     gap:30px;
@@ -540,9 +540,15 @@ body{
         transform:translateY(0px);
     }
 }
+.mainContainer .heroSection .imagesHeroSection div{
+    width: 100%;
+}
 .mainContainer .heroSection .imagesHeroSection .astronaut{
     width:80%;
-    overflow: visible;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     animation:astronaut 18s linear infinite;
 }
 
@@ -959,6 +965,7 @@ body{
     width:100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -1163,9 +1170,74 @@ body{
 
 /* MediaQueries */
 
-/* Screen max 1000px */
+/* Screen max 950px */
 
-@media screen (max-width: 1000px){
+@media screen and (max-width: 950px){
+    .mainContainer .heroSection{
+        width: 95%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:200px;
+    }
+    .mainContainer .heroSection .info,
+    .mainContainer .heroSection .imagesHeroSection{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainContainer .heroSection .imagesHeroSection .astronaut {
+        width: 60%;
+    }
+    .mainContainer .projectsContainer{
+        width:95%;
+    }
+    .mainContainer .projectsContainer .projects{
+        width:100%;
+    }
+    .mainContainer .projectsContainer .projects .accordion{
+        width:100%;
+    }
+    .mainContainer .projectsContainer .projects .projectSingle{
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .mainContainer .projectsContainer .projects .projectSingle .containerImage:nth-child(2){
+        width: 80%;
+    }
+    .mainContainer .technologiesContainer{
+        width:95%;
+    }
+    .mainContainer .aboutMeContainer{
+        width:95%;
+    }
+    .mainContainer .contactMe{
+        width:95%;
+    }
+}
 
 
+
+ /* Screen max 600px */
+
+@media screen and (max-width: 600px){
+    .mainContainer .heroSection .info .cta{
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    .mainContainer .heroSection .imagesHeroSection .astronaut{
+        width:80%;
+    }
+    .mainContainer .projectsContainer .projects .projectSingle .containerImage:nth-child(2){
+        width: 100%;
+    }
+}
+
+ /* Screen max 500px */
+
+@media screen and (max-width: 500px){
+    .mainContainer .heroSection .imagesHeroSection .astronaut{
+        width:100%;
+    }
 }
