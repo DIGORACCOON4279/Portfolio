@@ -98,7 +98,7 @@ body{
 }
 .navbar .navbarMenu .menu label .close{
     padding-left: 25px;
-    align-items: flex-start;
+    align-items: right;
     cursor: pointer;
 }
 .navbar .navbarMenu .menu ul{
@@ -1167,6 +1167,6 @@ body{
 /* Screen max 1000px */
 
 @media screen (max-width: 1000px){
-    
+
 
 }
