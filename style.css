@@ -92,7 +92,7 @@ body{
     top:0px;
     right:0px;
     background-color:var(--backgroundMenu);
-    box-shadow: 0 0 15px 2px #000000;
+    box-shadow: 0 0 25px 2px #000000;
     transform: translateY(-350px);
     transition: transform 0.3s ease-in-out;
 }
@@ -144,7 +144,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap:30px;
     margin:50px auto 0px;
 }
@@ -616,7 +616,6 @@ body{
 }
 .mainContainer .projectsContainer .titleSection{
     text-align: center;
-    margin-bottom: 50px;
     letter-spacing: 0px;
     text-shadow:2px 2px 5px var(--secondaryColor);
     font-weight: var(--RegularWeight);
@@ -711,6 +710,9 @@ body{
     align-items: center;
     gap:50px;
 }
+.mainContainer .projectsContainer .projects .accordion .links .networks{
+    flex-direction: row;
+}
 .mainContainer .projectsContainer .projects .accordion .links p{
     color:var(--tertiaryColor);
     font-size: 0.7rem;
@@ -793,27 +795,12 @@ body{
     width:85%;
     max-width: 85%;
     margin:150px auto;
-}
-.mainContainer .technologiesContainer .foreFront{
-    width:100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap:15px;
-}
-.mainContainer .technologiesContainer .foreFront .manSitting{
-    width:100%;
-    filter: drop-shadow(10px 10px 10px #000000) ;
-}
-.mainContainer .technologiesContainer{
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:100px;
 }
 .mainContainer .technologiesContainer .toolTechnology{
     width: 100%;
@@ -829,6 +816,16 @@ body{
     cursor: pointer;
     border-radius: 20px;
     box-shadow:0px 0px 20px 2px #000000;
+}
+.mainContainer .technologiesContainer .toolTechnology .design .backgroundFront .frontDesign,
+.mainContainer .technologiesContainer .toolTechnology .design .backgroundBack .backDesign,
+.mainContainer .technologiesContainer .toolTechnology .frontend .backgroundFront .frontFrontend,
+.mainContainer .technologiesContainer .toolTechnology .frontend .backgroundBack .backFrontend,
+.mainContainer .technologiesContainer .toolTechnology .backend .backgroundFront .frontBackend,
+.mainContainer .technologiesContainer .toolTechnology .backend .backgroundBack .backBackend,
+.mainContainer .technologiesContainer .toolTechnology .tools .backgroundFront .frontTools,
+.mainContainer .technologiesContainer .toolTechnology .tools .backgroundBack .backTools{
+    width:100%;
 }
 .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack{
     position: absolute;
@@ -912,7 +909,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:60px;
+    gap:80px;
 }
 .mainContainer .aboutMeContainer .description{
     width: 100%;
@@ -1193,11 +1190,25 @@ body{
 }
 
 
-/* Screen max 300px */
+/* Screen max 1300px */
 
 @media screen and (max-width: 1300px){
     .navbar .navbarMenu .menu{
         width: 30vw;
+    }
+}
+
+
+ /* Screen max 1100px */
+
+@media screen and (max-width: 1100px){
+    .mainContainer .aboutMeContainer .description{
+        flex-direction: column;
+        gap:100px;
+    }
+    .mainContainer .aboutMeContainer .figure{
+        flex-direction: column;
+        gap:80px;
     }
 }
 
@@ -1280,6 +1291,10 @@ body{
     }
     .mainContainer .projectsContainer .projects .projectSingle .containerImage:nth-child(2){
         width: 100%;
+    }
+    .mainContainer .projectsContainer .projects .accordion .links {
+        flex-direction: column;
+        gap:30px;
     }
 }
 
