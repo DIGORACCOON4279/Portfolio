@@ -38,7 +38,7 @@ Todos los proyectos estan para todos los dispositivos cellphone, tablet & laptop
 # Deployment </br>
 Mi portfolio fue desplegado en Netlify</br>
 
-🚀 -- ![white_Netlify](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/eb148dd1-5b6c-4e92-a1e2-46176052ad17) -- [Portfolio](https://main--portfolioraccoon.netlify.app/#) </br>
+🚀 -- ![white_Netlify](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/eb148dd1-5b6c-4e92-a1e2-46176052ad17) -- [Portfolio](https://portfolioraccoon.netlify.app/) </br>
 
 
 ![raccon_Logo1](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/947dd6ff-ce2b-4a94-bf44-4f9536ca46cc)</br>
