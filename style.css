@@ -133,10 +133,6 @@ body{
 
 /* Hero Section */
 
-.mainContainer{
-    overflow:hidden;
-}
-
 .mainContainer .heroSection{
     width:85%;
     height: auto;
@@ -148,7 +144,6 @@ body{
     gap:30px;
     margin:50px auto 0px;
 }
-
 .mainContainer .backgroundHeroSection .background{
     width:100%;
 }
@@ -1045,9 +1040,17 @@ body{
     max-width: 100%;
 }
 
+/* Footer */
+
 /* Contact me */
 
-.mainContainer .contactMe{
+.footerContainer{
+    width:100%;
+    margin:150px auto 0px;
+    overflow: hidden;
+}
+
+.footerContainer .contactMe{
     width:85%;
     margin:150px auto;
     display: flex;
@@ -1056,38 +1059,38 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.mainContainer .contactMe .manSittingContactMe{
+.footerContainer .contactMe .manSittingContactMe{
     position: relative;
 }
-.mainContainer .contactMe .manSittingContactMe .dialogs{
+.footerContainer .contactMe .manSittingContactMe .dialogs{
     position:relative;
 }
-.mainContainer .contactMe .manSittingContactMe .dialogs .item{
+.footerContainer .contactMe .manSittingContactMe .dialogs .item{
     position:absolute;
     filter: drop-shadow(60px 30px 1px #000000) ;
 }
-.mainContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(1){
+.footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(1){
     top:-40px;
     left:20%;
 }
-.mainContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(2){
+.footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(2){
     top:-90px;
     left:40%;
 }
-.mainContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
+.footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
     top:-240px;
     left:50%;
 }
-.mainContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
+.footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
     top:50%;
     left:75%;
 }
-.mainContainer .contactMe .manSittingContactMe .manLaptop{
+.footerContainer .contactMe .manSittingContactMe .manLaptop{
     width:100%;
     z-index: 9;
 }
-.mainContainer .contactMe .manSittingContactMe .orangeSquare,
-.mainContainer .contactMe .manSittingContactMe .violetSquare{
+.footerContainer .contactMe .manSittingContactMe .orangeSquare,
+.footerContainer .contactMe .manSittingContactMe .violetSquare{
     width:250px;
     height:250px;
     position: absolute;
@@ -1097,12 +1100,12 @@ body{
     border-radius: 20px;
     background:linear-gradient(to bottom , var(--secondaryColor) 0%, #fb5c0000) ;
 }
-.mainContainer .contactMe .manSittingContactMe .violetSquare{
+.footerContainer .contactMe .manSittingContactMe .violetSquare{
     top:10%;
     left:0%;
     background: linear-gradient(to right, var(--primaryColor) 0%, #ae00ff00);
 }
-.mainContainer .contactMe .infoContact{
+.footerContainer .contactMe .infoContact{
     background-image: url("img/backgroundGray.webp");
     background-position: center;
     background-repeat: no-repeat;
@@ -1115,44 +1118,38 @@ body{
     border-radius: 20px;
     box-shadow:0px 0px 50px 20px #000000 ;
 }
-.mainContainer .contactMe .infoContact .socialMedia .navSocialMedia ul{
+.footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap:10px;
 }
-.mainContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li{
+.footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li{
     list-style-type: none;
 }
-.mainContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li .itemIcon{
+.footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li .itemIcon{
     text-decoration: none;
 }
-.mainContainer .contactMe .infoContact .socialMedia .fadeBallSection{
+.footerContainer .contactMe .infoContact .socialMedia .fadeBallSection{
     position: relative;
+    overflow: visible;
 }
-.mainContainer .contactMe .infoContact .socialMedia .fadeBallSection .fadeBall{
+.footerContainer .contactMe .infoContact .socialMedia .fadeBallSection .fadeBall{
     width:1px;
     height:1px;
     position: absolute;
     z-index: -1;
 }
-.mainContainer .contactMe .infoContact .socialMedia .fadeBallSection .fadeBall:nth-child(1){
+.footerContainer .contactMe .infoContact .socialMedia .fadeBallSection .fadeBall:nth-child(1){
     top:-150px;
     left:10%;
     box-shadow: 10px 10px 380px 100px var(--primaryColor);
 }
-.mainContainer .contactMe .infoContact .socialMedia .fadeBallSection .fadeBall:nth-child(2){
+.footerContainer .contactMe .infoContact .socialMedia .fadeBallSection .fadeBall:nth-child(2){
     top:-10px;
     left:70%;
     box-shadow: 10px 10px 380px 100px var(--tertiaryColor);
-}
-
-/* Footer */
-
-.footerContainer{
-    width:100%;
-    margin:150px auto 0px;
 }
 .footerContainer .backgroundFooter{
     width:100%;
@@ -1185,19 +1182,8 @@ body{
 @media screen and (max-width: 1300px){
     .navbar .navbarMenu .menu{
         width: 25vw;
-
     }
 }
-
-
-/* Screen max 1300px */
-
-@media screen and (max-width: 1300px){
-    .navbar .navbarMenu .menu{
-        width: 30vw;
-    }
-}
-
 
  /* Screen max 1100px */
 
