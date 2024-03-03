@@ -126,7 +126,7 @@ body{
     transition: 0.3s ease-in-out;
 }
 .navbar .navbarMenu .menu ul li .option:hover{
-    background: linear-gradient(to right, #fb5c0000 0%, var(--primaryColor) 50%, rgba(251, 92, 0, 0) 100%);
+    background: linear-gradient(to right, #ae00ff00 0%, var(--primaryColor) 50%, #ae00ff00 100%);
     color:#ffffff;
     font-weight: var(--semiBoldWeight);
 }
@@ -283,12 +283,14 @@ body{
     font-size: var(--cta);
     font-weight: var(--MediumWeight);
     text-align: center;
-    background: linear-gradient(to right, var(--secondaryColor) 0%, #fb5c0000);
+    background: linear-gradient(to right, #fb5c0000 0%, var(--secondaryColor) 50%, #fb5c0000);
+
     transform: scale(100%);
     transition: 0.3s ease-in-out;
 }
 .mainContainer .heroSection .info .cta .btnCta:nth-child(2){
-    background: linear-gradient(to right, var(--primaryColor) 0%, #ae00ff00);
+    background: linear-gradient(to right, #ae00ff00 0%, var(--primaryColor) 50%, #ae00ff00 100%);
+
     transition: 0.3s ease-in-out;
 }
 .mainContainer .heroSection .info .cta .btnCta:hover{
