@@ -370,7 +370,7 @@ body{
 }
 .mainContainer .heroSection .imagesHeroSection .itemTechnologies:nth-child(3){
     top:-12%;
-    left:35%;
+    left:43%;
     animation: itemThree 15s linear infinite;
 }
 @keyframes itemThree{
@@ -391,8 +391,8 @@ body{
     }
 }
 .mainContainer .heroSection .imagesHeroSection .itemTechnologies:nth-child(4){
-    top:0%;
-    left:-15%;
+    top:-20%;
+    left:0%;
     animation: itemFour 15s linear infinite;
 }
 @keyframes itemFour{
@@ -413,8 +413,8 @@ body{
     }
 }
 .mainContainer .heroSection .imagesHeroSection .itemTechnologies:nth-child(5){
-    top:-15%;
-    left:8%;
+    top:-25%;
+    left:30%;
     animation: itemFive 15s linear infinite;
 }
 @keyframes itemFive{
@@ -436,7 +436,7 @@ body{
 }
 .mainContainer .heroSection .imagesHeroSection .itemTechnologies:nth-child(6){
     top:0%;
-    right:5%;
+    right:0%;
     animation: itemSix 15s linear infinite;
 }
 @keyframes itemSix{
@@ -480,8 +480,8 @@ body{
     }
 }
 .mainContainer .heroSection .imagesHeroSection .itemTechnologies:nth-child(8){
-    top:0%;
-    right:35%;
+    top:-10%;
+    right:25%;
     animation: itemEight 15s linear infinite;
 }
 @keyframes itemEight{
@@ -502,8 +502,8 @@ body{
     }
 }
 .mainContainer .heroSection .imagesHeroSection .itemTechnologies:nth-child(9){
-    top:-20%;
-    right:30%;
+    top:-22%;
+    right:15%;
     animation: itemNine 15s linear infinite;
 }
 @keyframes itemNine{
@@ -585,19 +585,19 @@ body{
     position: absolute;
 }
 .mainContainer .heroSection .imagesHeroSection .fadeBall:nth-child(1){
-    top:350px;
-    left:10%;
-    box-shadow: 10px 10px 380px 100px var(--secondaryColor);
+    top:280px;
+    left:30%;
+    box-shadow: 10px 10px 200px 50px var(--secondaryColor);
 }
 .mainContainer .heroSection .imagesHeroSection .fadeBall:nth-child(2){
     top:250px;
     left:70%;
-    box-shadow: 10px 10px 380px 100px var(--tertiaryColor);
+    box-shadow: 10px 10px 200px 50px var(--tertiaryColor);
 }
 .mainContainer .heroSection .imagesHeroSection .fadeBall:nth-child(3){
-    top:-50px;
-    left:30%;
-    box-shadow: 10px 10px 380px 100px var(--primaryColor);
+    top:0px;
+    left:50%;
+    box-shadow: 10px 10px 200px 50px var(--primaryColor);
 }
 
 /* Projects Container */
@@ -1186,13 +1186,18 @@ body{
     }
 }
 
+
+/* Screen max 1200px */
+
+@media screen and (max-width: 1200px){
+    .mainContainer .heroSection .info .cta{
+        flex-wrap: wrap;
+    }
+}
+
  /* Screen max 1100px */
 
 @media screen and (max-width: 1100px){
-    .mainContainer .aboutMeContainer .description{
-        flex-direction: column;
-        gap:100px;
-    }
     .mainContainer .aboutMeContainer .figure{
         flex-direction: column;
         gap:80px;
@@ -1208,11 +1213,17 @@ body{
         flex-wrap: wrap;
         gap:200px;
     }
+    .mainContainer .heroSection .info .headline{
+        text-align: center;
+    }
     .mainContainer .heroSection .info,
     .mainContainer .heroSection .imagesHeroSection{
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .mainContainer .heroSection .info .cta{
+        width:65%;
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut {
         width: 60%;
@@ -1251,7 +1262,9 @@ body{
 @media screen and (max-width: 850px){
     .navbar .navbarMenu .menu{
         width: 40vw;
-
+    }
+    .mainContainer .heroSection .info .cta{
+        width:70%;
     }
 }
 
@@ -1260,6 +1273,9 @@ body{
 @media screen and (max-width: 700px){
     .navbar .navbarMenu .menu{
         width: 45vw;
+    }
+    .mainContainer .heroSection .info .cta{
+        width:85%;
     }
 }
 
@@ -1270,7 +1286,7 @@ body{
         width: 55vw;
     }
     .mainContainer .heroSection .info .cta{
-        flex-wrap: wrap;
+        width:100%;
         gap:10px;
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
