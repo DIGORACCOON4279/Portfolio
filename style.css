@@ -1047,7 +1047,7 @@ body{
 .footerContainer{
     width:100%;
     margin:150px auto 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .footerContainer .contactMe{
