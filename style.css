@@ -57,7 +57,6 @@ body{
     backdrop-filter: blur(50px);
     position:fixed;
     top:0px;
-    overflow:hidden;
     z-index: 99;
 }
 .navbar .navbarMenu{
@@ -83,22 +82,21 @@ body{
     transform: translateY(0px);
 }
 .navbar .navbarMenu .menu{
-    width: 20%;
+    width: 20vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     position: fixed;
     top:0px;
-    right:-36px;
+    right:0px;
     background-color:var(--backgroundMenu);
     box-shadow: 0 0 15px 2px #000000;
     transform: translateY(-350px);
     transition: transform 0.3s ease-in-out;
 }
 .navbar .navbarMenu .menu label .close{
-    padding-left: 25px;
     align-items: right;
     cursor: pointer;
 }
@@ -114,6 +112,7 @@ body{
 .navbar .navbarMenu .menu ul li{
     cursor: pointer;
     padding: 15px 0px;
+    text-align: center;
     list-style-type: none;
 }
 .navbar .navbarMenu .menu ul li .option{
@@ -123,11 +122,11 @@ body{
     color:var(--contentColor);
     font-size: var(--cta);
     font-weight: var(--MediumWeight);
-    padding: 15px 50% 15px 25px;
+    padding:15px 25%;
     transition: 0.3s ease-in-out;
 }
 .navbar .navbarMenu .menu ul li .option:hover{
-    background: linear-gradient(to right, var(--primaryColor) 0%, #fb5c0000);
+    background: linear-gradient(to right, #fb5c0000 0%, var(--primaryColor) 50%, rgba(251, 92, 0, 0) 100%);
     color:#ffffff;
     font-weight: var(--semiBoldWeight);
 }
@@ -1182,6 +1181,24 @@ body{
 
 /* MediaQueries */
 
+/* Screen max 1300px */
+
+@media screen and (max-width: 1300px){
+    .navbar .navbarMenu .menu{
+        width: 25vw;
+
+    }
+}
+
+
+/* Screen max 300px */
+
+@media screen and (max-width: 1300px){
+    .navbar .navbarMenu .menu{
+        width: 30vw;
+    }
+}
+
 /* Screen max 950px */
 
 @media screen and (max-width: 950px){
@@ -1229,24 +1246,29 @@ body{
     }
 }
 
-/* Screen max 750px */
+ /* Screen max 850px */
 
-@media screen and (max-width: 750px){
-    .navbar{
-        max-width: 100%;
-        overflow:hidden;
+@media screen and (max-width: 850px){
+    .navbar .navbarMenu .menu{
+        width: 40vw;
 
     }
-    .mainContainer{
-        max-width: 100%;
-        overflow:hidden;
+}
 
+/* Screen max 700px */
+
+@media screen and (max-width: 700px){
+    .navbar .navbarMenu .menu{
+        width: 45vw;
     }
 }
 
  /* Screen max 600px */
 
 @media screen and (max-width: 600px){
+    .navbar .navbarMenu .menu{
+        width: 55vw;
+    }
     .mainContainer .heroSection .info .cta{
         flex-wrap: wrap;
         gap:10px;
@@ -1262,6 +1284,9 @@ body{
  /* Screen max 500px */
 
 @media screen and (max-width: 500px){
+    .navbar .navbarMenu .menu{
+        width: 100vw;
+    }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
         width:100%;
     }
