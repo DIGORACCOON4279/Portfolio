@@ -1041,6 +1041,7 @@ body{
     background: linear-gradient(to right, var(--secondaryColor) 0%, #ae00ff00);
 }
 .mainContainer .aboutMeContainer .figure .images .manLaptop{
+    width:auto;
     margin:auto;
     z-index: 9;
 }
@@ -1384,6 +1385,10 @@ body{
         flex-direction: column;
         gap:30px;
     }
+    .mainContainer .projectsContainer .projects,
+    .mainContainer .projectsContainer .projects .projectSingle{
+        gap:40px;
+    }
     .mainContainer .technologiesContainer .toolTechnology .design .backgroundFront .frontDesign,
     .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack .backDesign,
     .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundFront .frontFrontend,
@@ -1408,6 +1413,9 @@ body{
     }
     .mainContainer .aboutMeContainer .figure .images .blueSquare{
         width:60%;
+    }
+    .mainContainer .aboutMeContainer .figure .images .manLaptop{
+        width:70%;
     }
     .footerContainer .contactMe .manSittingContactMe,
     .footerContainer .contactMe .infoContact{
