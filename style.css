@@ -1385,7 +1385,9 @@ body{
         flex-direction: column;
         gap:30px;
     }
-    .mainContainer .projectsContainer .projects,
+    .mainContainer .projectsContainer .projects{
+        gap:40px;
+    }
     .mainContainer .projectsContainer .projects .projectSingle{
         gap:40px;
     }
@@ -1431,6 +1433,7 @@ body{
         display:none;
     }
     .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
+        width:100%;
         bottom:-100%;
         left:0%;
     }
@@ -1444,5 +1447,8 @@ body{
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
         width:70%;
+    }
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
+        display:none;
     }
 }
