@@ -917,9 +917,12 @@ body{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.mainContainer .aboutMeContainer .description .titleSection{
+    margin:auto;
 }
 .mainContainer .aboutMeContainer .description .containerInfo{
     width:50%;
@@ -965,7 +968,6 @@ body{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     object-fit: cover;
-    /* aspect-ratio:16/12; */
 }
 .mainContainer .aboutMeContainer .description .fadeBallContainer{
     position: absolute;
@@ -977,24 +979,23 @@ body{
     width: 100%;
 }
 .mainContainer .aboutMeContainer .figure{
-    width:100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
 .mainContainer .aboutMeContainer .figure .icons{
-    width:100%;
+    width:50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    gap:15px;
+    align-items: flex-end;
     margin: auto;
 }
 .mainContainer .aboutMeContainer .figure .icons .knowledge{
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1040,7 +1041,7 @@ body{
     background: linear-gradient(to right, var(--secondaryColor) 0%, #ae00ff00);
 }
 .mainContainer .aboutMeContainer .figure .images .manLaptop{
-    width:100%;
+    margin:auto;
     z-index: 9;
 }
 
@@ -1231,6 +1232,7 @@ body{
 @media screen and (max-width: 1100px){
     .mainContainer .aboutMeContainer .description,
     .mainContainer .aboutMeContainer .figure{
+        max-width: 85%;
         flex-direction: column;
         gap:80px;
     }
@@ -1240,9 +1242,13 @@ body{
         padding-right: 20px;
         padding-top: 20px;
     }
-    .mainContainer .aboutMeContainer .figure .images .manLaptop{
+    /* .mainContainer .aboutMeContainer .figure .images .manLaptop{
         width:75%;
         margin:auto;
+    } */
+    .mainContainer .aboutMeContainer .figure .icons{
+        width:68%;
+        align-items: center;
     }
     .mainContainer .aboutMeContainer .description .containerInfo .myPic{
         width:120px;
@@ -1252,6 +1258,9 @@ body{
         box-shadow: 0 0 30px 2px #000000;
         border: 2px solid transparent;
         align-self: center;
+    }
+    .mainContainer .aboutMeContainer .figure .images .blueSquare{
+        width:70%;
     }
     .footerContainer .contactMe{
         flex-direction:column;
@@ -1324,6 +1333,17 @@ body{
     .mainContainer .heroSection .info .cta{
         width:70%;
     }
+
+    .mainContainer .aboutMeContainer{
+        max-width: 100%;
+    }
+    .mainContainer .aboutMeContainer .description,
+    .mainContainer .aboutMeContainer .figure{
+        max-width: 100%;
+    }
+    .mainContainer .aboutMeContainer .figure .images .blueSquare{
+        width:75%;
+    }
     .footerContainer .contactMe .manSittingContactMe,
     .footerContainer .contactMe .infoContact{
         width:85%;
@@ -1338,6 +1358,9 @@ body{
     }
     .mainContainer .heroSection .info .cta{
         width:85%;
+    }
+    .mainContainer .aboutMeContainer .figure .images .blueSquare{
+        width:80%;
     }
 }
 
@@ -1375,10 +1398,16 @@ body{
     .mainContainer .aboutMeContainer .figure{
         width:95vw;
     }
+    .mainContainer .aboutMeContainer .figure .icons{
+        width:100%;
+    }
     .mainContainer .aboutMeContainer .description .containerInfo,
     .mainContainer .aboutMeContainer .figure .icons .knowledge,
     .mainContainer .aboutMeContainer .figure .images{
         width:100%;
+    }
+    .mainContainer .aboutMeContainer .figure .images .blueSquare{
+        width:60%;
     }
     .footerContainer .contactMe .manSittingContactMe,
     .footerContainer .contactMe .infoContact{
