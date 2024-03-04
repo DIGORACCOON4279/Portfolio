@@ -283,7 +283,6 @@ body{
     font-weight: var(--MediumWeight);
     text-align: center;
     background: linear-gradient(to right, #fb5c0000 0%, var(--secondaryColor) 50%, #fb5c0000);
-
     transform: scale(100%);
     transition: 0.3s ease-in-out;
 }
@@ -1149,6 +1148,9 @@ body{
     border-radius: 20px;
     box-shadow:0px 0px 50px 20px #000000 ;
 }
+.footerContainer .contactMe .infoContact .titleSection{
+    color: var(--secondaryColor);
+}
 .footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul{
     display: flex;
     flex-direction: row;
@@ -1216,7 +1218,6 @@ body{
     }
 }
 
-
 /* Screen max 1200px */
 
 @media screen and (max-width: 1200px){
@@ -1243,10 +1244,6 @@ body{
         padding-right: 20px;
         padding-top: 20px;
     }
-    /* .mainContainer .aboutMeContainer .figure .images .manLaptop{
-        width:75%;
-        margin:auto;
-    } */
     .mainContainer .aboutMeContainer .figure .icons{
         width:68%;
         align-items: center;
@@ -1444,6 +1441,36 @@ body{
 @media screen and (max-width: 500px){
     .navbar .navbarMenu .menu{
         width: 100vw;
+    }
+    .navbar .navbarMenu .menu ul li .option{
+        font-size: 0.9rem;
+    }
+    .mainContainer .heroSection .info .headline .greeting{
+        font-size: 0.9rem;
+    }
+    .mainContainer .heroSection .info .headline .titleSection{
+        font-size: 1.8rem;
+    }
+    .mainContainer .heroSection .info .headline .mainTitle{
+        font-size: 2.2rem;
+    }
+    .mainContainer .heroSection .info .headline .mainTitle span{
+        font-size:  2.2rem;
+    }
+    .mainContainer .heroSection .info .cta .btnCta{
+        font-size: 0.9rem;
+    }
+    .mainContainer .titleSection{
+        font-size: 1.8rem;
+    }
+    .mainContainer .projectsContainer .projects .accordion .sectionAccordion h3 {
+        font-size: 1rem;
+    }
+    .mainContainer .aboutMeContainer .figure .icons .knowledge {
+        font-size: 0.6rem;
+    }
+    .footerContainer .contactMe .infoContact .titleSection{
+        font-size: 1.8rem;
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
         width:70%;
