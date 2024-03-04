@@ -1430,6 +1430,11 @@ body{
         display:none;
     }
     .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
+        width:100%;
+        bottom:-100%;
+        left:0%;
+    }
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
         display:none;
     }
 }
