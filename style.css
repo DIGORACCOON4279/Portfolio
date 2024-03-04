@@ -133,6 +133,10 @@ body{
 
 /* Hero Section */
 
+.mainContainer{
+    overflow: hidden;
+}
+
 .mainContainer .heroSection{
     width:85%;
     height: auto;
@@ -294,15 +298,13 @@ body{
 }
 .mainContainer .backgroundEndHeroSection{
     width:100%;
-    max-width: 100%;
     position: relative;
 }
 .mainContainer .backgroundEndHeroSection .backgroundStraight{
     width:100%;
-    max-width: 100%;
 }
 .mainContainer .backgroundEndHeroSection .earth{
-    width:auto;
+    max-width: 25%;
     height: auto;
     position: absolute;
     top: 25%;
@@ -652,11 +654,11 @@ body{
 .mainContainer .projectsContainer .projects .accordion .sectionAccordion p{
     font-family: var(--fontFamily);
     color:var(--contentColor);
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: var(--RegularWeight);
     letter-spacing: 2px;
     line-height: 20px;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     border-radius: 10px;
     background:linear-gradient(to top , #252525 0%, #000000) ;
@@ -776,10 +778,12 @@ body{
 /* Planet */
 
 .mainContainer .violetPlanet{
-    width:100%;
+    width: 25%;
     position: relative;
 }
 .mainContainer .violetPlanet .planet{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     bottom:0px;
     left:0px;
@@ -829,7 +833,7 @@ body{
     top:0px;
     clip-path: circle(0.3% at 100% 0);
     opacity:0;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .design:hover .backgroundBack{
@@ -849,7 +853,7 @@ body{
     top:0px;
     clip-path: circle(2.9% at 50% 50%);
     opacity:0;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .frontend:hover .backgroundBack{
@@ -868,7 +872,7 @@ body{
     top:0px;
     clip-path: circle(2.9% at 50% 50%);
     opacity:0;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .backend:hover .backgroundBack{
@@ -887,7 +891,7 @@ body{
     top:0px;
     clip-path: circle(4.4% at 0 100%);
     opacity:0;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .tools:hover .backgroundBack{
@@ -912,13 +916,13 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     position: relative;
 }
 .mainContainer .aboutMeContainer .description .containerInfo{
-    width: 600px;
+    width:50%;
     height:auto;
     display: flex;
     flex-direction: row;
@@ -941,21 +945,27 @@ body{
     align-items: flex-start;
 }
 .mainContainer .aboutMeContainer .description .containerInfo .whoIAm .quotation{
-    width:15%;
+    width:auto;
     align-self: self-end;
 }
-.mainContainer .aboutMeContainer .description .containerInfo .whoIAm .paragraph, p{
+.mainContainer .aboutMeContainer .description .containerInfo .whoIAm .paragraph,
+.mainContainer .aboutMeContainer .description .containerInfo .whoIAm p{
     color:var(--contentColor);
-    font-size: var(--contentText);
+    font-size: 0.6rem;
     font-family: var(--fontFamily);
     font-weight: var(--MediumWeight);
     padding: 0px 0px 20px 20px;
     letter-spacing: 2px;
 }
+.mainContainer .aboutMeContainer .description .containerInfo .whoIAm p{
+    font-size: 0.8rem;
+}
 .mainContainer .aboutMeContainer .description .containerInfo .myPic{
+    width:max-content;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     object-fit: cover;
+    /* aspect-ratio:16/12; */
 }
 .mainContainer .aboutMeContainer .description .fadeBallContainer{
     position: absolute;
@@ -970,19 +980,21 @@ body{
     width:100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
 .mainContainer .aboutMeContainer .figure .icons{
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     gap:15px;
+    margin: auto;
 }
 .mainContainer .aboutMeContainer .figure .icons .knowledge{
-    width: 430px;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -996,9 +1008,10 @@ body{
     box-shadow: 0 0 20px 2px #000000;
 }
 .mainContainer .aboutMeContainer .figure .icons .knowledge img{
-    width: 48px;
+    width: auto;
 }
 .mainContainer .aboutMeContainer .figure .images{
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1012,8 +1025,8 @@ body{
 }
 .mainContainer .aboutMeContainer .figure .images .orangeSquare,
 .mainContainer .aboutMeContainer .figure .images .blueSquare{
-    width:250px;
-    height:250px;
+    width:60%;
+    height:60%;
     position: absolute;
     top:35%;
     left:40%;
@@ -1042,6 +1055,15 @@ body{
     max-width: 100%;
 }
 
+/* New Planet background*/
+
+.mainContainer .newPlanet{
+    width:60%;
+}
+.mainContainer .newPlanet .newPlanetSideBySide{
+    width:100%;
+}
+
 /* Footer */
 
 /* Contact me */
@@ -1049,6 +1071,7 @@ body{
 .footerContainer{
     width:100%;
     margin:150px auto 0px;
+    /* overflow: hidden; */
 }
 
 .footerContainer .contactMe{
@@ -1057,14 +1080,17 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap:30px;
 }
 .footerContainer .contactMe .manSittingContactMe{
+    width:auto;
     position: relative;
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs{
     position:relative;
+    /* overflow: hidden; */
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs .item{
     position:absolute;
@@ -1072,19 +1098,19 @@ body{
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(1){
     top:-40px;
-    left:20%;
+    left:5%;
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(2){
-    top:-90px;
-    left:40%;
+    top:-120px;
+    left:17%;
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
-    top:-240px;
-    left:50%;
+    top:-220px;
+    left:25%;
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
     top:50%;
-    left:75%;
+    left:65%;
 }
 .footerContainer .contactMe .manSittingContactMe .manLaptop{
     width:100%;
@@ -1092,8 +1118,8 @@ body{
 }
 .footerContainer .contactMe .manSittingContactMe .orangeSquare,
 .footerContainer .contactMe .manSittingContactMe .violetSquare{
-    width:250px;
-    height:250px;
+    width:60%;
+    height:60%;
     position: absolute;
     top:-5%;
     left:40%;
@@ -1107,9 +1133,11 @@ body{
     background: linear-gradient(to right, var(--primaryColor) 0%, #ae00ff00);
 }
 .footerContainer .contactMe .infoContact{
+    width:auto;
     background-image: url("img/backgroundGray.webp");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1193,14 +1221,44 @@ body{
     .mainContainer .heroSection .info .cta{
         flex-wrap: wrap;
     }
+    .footerContainer .contactMe{
+        justify-content: center;
+    }
 }
 
  /* Screen max 1100px */
 
 @media screen and (max-width: 1100px){
+    .mainContainer .aboutMeContainer .description,
     .mainContainer .aboutMeContainer .figure{
         flex-direction: column;
         gap:80px;
+    }
+    .mainContainer .aboutMeContainer .description .containerInfo{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+    .mainContainer .aboutMeContainer .figure .images .manLaptop{
+        width:75%;
+        margin:auto;
+    }
+    .mainContainer .aboutMeContainer .description .containerInfo .myPic{
+        width:120px;
+        height:120px;
+        object-fit:cover ;
+        border-radius: 50%;
+        box-shadow: 0 0 30px 2px #000000;
+        border: 2px solid transparent;
+        align-self: center;
+    }
+    .footerContainer .contactMe{
+        flex-direction:column;
+    }
+    .footerContainer .contactMe .manSittingContactMe,
+    .footerContainer .contactMe .infoContact{
+        width:75%;
     }
 }
 
@@ -1252,7 +1310,7 @@ body{
     .mainContainer .aboutMeContainer{
         width:95%;
     }
-    .mainContainer .contactMe{
+    .footerContainer .contactMe{
         width:95%;
     }
 }
@@ -1265,6 +1323,10 @@ body{
     }
     .mainContainer .heroSection .info .cta{
         width:70%;
+    }
+    .footerContainer .contactMe .manSittingContactMe,
+    .footerContainer .contactMe .infoContact{
+        width:85%;
     }
 }
 
@@ -1290,7 +1352,7 @@ body{
         gap:10px;
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
-        width:80%;
+        width:65%;
     }
     .mainContainer .projectsContainer .projects .projectSingle .containerImage:nth-child(2){
         width: 100%;
@@ -1298,6 +1360,42 @@ body{
     .mainContainer .projectsContainer .projects .accordion .links {
         flex-direction: column;
         gap:30px;
+    }
+    .mainContainer .technologiesContainer .toolTechnology .design .backgroundFront .frontDesign,
+    .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack .backDesign,
+    .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundFront .frontFrontend,
+    .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundBack .backFrontend,
+    .mainContainer .technologiesContainer .toolTechnology .backend .backgroundFront .frontBackend,
+    .mainContainer .technologiesContainer .toolTechnology .backend .backgroundBack .backBackend,
+    .mainContainer .technologiesContainer .toolTechnology .tools .backgroundFront .frontTools,
+    .mainContainer .technologiesContainer .toolTechnology .tools .backgroundBack .backTools{
+        width:95vw;
+    }
+    .mainContainer .aboutMeContainer .description,
+    .mainContainer .aboutMeContainer .figure{
+        width:95vw;
+    }
+    .mainContainer .aboutMeContainer .description .containerInfo,
+    .mainContainer .aboutMeContainer .figure .icons .knowledge,
+    .mainContainer .aboutMeContainer .figure .images{
+        width:100%;
+    }
+    .footerContainer .contactMe .manSittingContactMe,
+    .footerContainer .contactMe .infoContact{
+        width:100%;
+    }
+    .footerContainer .contactMe .infoContact{
+        padding:35px 0;
+    }
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(1){
+        display:none;
+    }
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(2){
+        display:none;
+    }
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
+        bottom:-100%;
+        left:0%;
     }
 }
 
@@ -1308,6 +1406,6 @@ body{
         width: 100vw;
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
-        width:100%;
+        width:70%;
     }
 }
