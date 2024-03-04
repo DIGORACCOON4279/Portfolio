@@ -1423,19 +1423,15 @@ body{
     .footerContainer .contactMe .infoContact{
         padding:35px 0;
     }
-    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(1){
-        display:none;
-    }
-    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(2){
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(1),
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(2),
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
         display:none;
     }
     .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
-        width:100%;
-        bottom:-100%;
+        width:85%;
+        bottom:0%;
         left:0%;
-    }
-    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
-        display:none;
     }
 }
 
@@ -1478,7 +1474,7 @@ body{
     .mainContainer .heroSection .imagesHeroSection .astronaut{
         width:70%;
     }
-    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(4){
-        display:none;
+    .footerContainer .contactMe .manSittingContactMe .dialogs .item:nth-child(3){
+        width:100%;
     }
 }
