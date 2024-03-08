@@ -624,7 +624,7 @@ body{
     align-items: center;
 }
 .mainContainer .projectsContainer .projects .accordion{
-    width:70%;
+    width:100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -653,10 +653,10 @@ body{
 .mainContainer .projectsContainer .projects .accordion .sectionAccordion p{
     font-family: var(--fontFamily);
     color:var(--contentColor);
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: var(--RegularWeight);
     letter-spacing: 2px;
-    line-height: 20px;
+    line-height: 35px;
     text-align: left;
     padding: 20px;
     border-radius: 10px;
@@ -824,6 +824,7 @@ body{
 .mainContainer .technologiesContainer .toolTechnology .tools .backgroundFront .frontTools,
 .mainContainer .technologiesContainer .toolTechnology .tools .backgroundBack .backTools{
     width:100%;
+    object-fit: cover;
 }
 .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack{
     width:100%;
@@ -953,16 +954,17 @@ body{
     color:var(--contentColor);
     font-size: 0.6rem;
     font-family: var(--fontFamily);
-    font-weight: var(--MediumWeight);
+    font-weight: var(--semiBoldWeight);
     padding: 0px 0px 20px 20px;
     letter-spacing: 2px;
+    line-height: 15px;
 }
 .mainContainer .aboutMeContainer .description .containerInfo .whoIAm p{
     font-size: 0.8rem;
 }
 .mainContainer .aboutMeContainer .description .containerInfo .myPic{
     width:max-content;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1.2;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     object-fit: cover;
@@ -1280,8 +1282,15 @@ body{
         align-items: flex-start;
         padding-top: 20px;
     }
-    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm p{
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm p,
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm .paragraph{
         text-align: left;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm .paragraph{
+        font-size: 0.8rem;
+        font-weight: var(--MediumWeight);
     }
     .mainContainer .aboutMeContainer .figure .icons{
         align-items: center;
@@ -1536,11 +1545,22 @@ body{
     .mainContainer .projectsContainer .projects .accordion .sectionAccordion h3 {
         font-size: 1rem;
     }
-    .mainContainer .aboutMeContainer .figure .icons .knowledge {
+    .mainContainer .projectsContainer .projects .accordion .sectionAccordion p{
+        font-size: 0.7rem;
+        line-height: 25px;
+    }
+    .mainContainer .aboutMeContainer .figure .icons .knowledge{
         font-size: 0.6rem;
     }
     .footerContainer .contactMe .infoContact .titleSection{
         font-size: 1.8rem;
+    }
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm p,
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm .paragraph{
+        font-size: 0.8rem;
+    }
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm .paragraph{
+        font-size: 0.7rem;
     }
     .mainContainer .heroSection .imagesHeroSection .astronaut{
         width:70%;
