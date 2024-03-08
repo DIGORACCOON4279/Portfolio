@@ -653,8 +653,8 @@ body{
 .mainContainer .projectsContainer .projects .accordion .sectionAccordion p{
     font-family: var(--fontFamily);
     color:var(--contentColor);
-    font-size: 0.8rem;
-    font-weight: var(--RegularWeight);
+    font-size: 0.7rem;
+    font-weight: var(--regularWeight);
     letter-spacing: 2px;
     line-height: 30px;
     text-align: left;
@@ -1546,8 +1546,8 @@ body{
         font-size: 1rem;
     }
     .mainContainer .projectsContainer .projects .accordion .sectionAccordion p{
-        font-size: 0.7rem;
-        line-height: 25px;
+        font-size: 0.6rem;
+        line-height: 20px;
     }
     .mainContainer .aboutMeContainer .figure .icons .knowledge{
         font-size: 0.6rem;
