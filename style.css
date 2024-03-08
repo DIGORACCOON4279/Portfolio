@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
+
 :root{
 
     /* Color */
@@ -36,7 +32,11 @@
     --cta:1rem;
     --contentText:0.8rem;
 }
-
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -46,6 +46,83 @@ body{
     font-style: normal;
     background-color: var(--backgroundColor);
     color: var(--contentColor);
+}
+
+/* Coverture */
+
+.mainOverlay,
+.overlay {
+    width:100vw;
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin:auto;
+}
+.mainOverlay .tileCoverture,
+.overlay .tileCoverture {
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-family: var(--fontFamily);
+    line-height: 200px;
+}
+.mainOverlay{
+    background-color: white;
+    color: black;
+}
+.mainOverlay .hoverBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    cursor: pointer;
+}
+.mainOverlay .svg {
+    margin: 1em;
+    fill: white;
+}
+
+.overlay {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+    transition: clip-path 100ms;
+}
+.overlay .open{
+    object-fit: cover;
+    cursor: pointer;
+    position: absolute;
+    top:33px;
+    right: 67px;
+    transition:.5s;
+}
+.overlay .open:hover{
+    opacity: .7;
+}
+.overlay .hoverBtn2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    cursor: pointer;
+}
+.overlay .svg {
+    margin: 1em;
+    fill: black;
+}
+.isOpen {
+    clip-path: circle(200% at 100% 100%);
+    transition: clip-path 1.9s;
+    transition-timing-function: cubic-bezier(1,-0.01,.01,.99);
 }
 
 /* Header */
