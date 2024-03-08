@@ -933,7 +933,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    gap: 20px;
+    gap: 10px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow:0px 0px 50px 20px #000000 ;
@@ -962,6 +962,7 @@ body{
 }
 .mainContainer .aboutMeContainer .description .containerInfo .myPic{
     width:max-content;
+    aspect-ratio: 1/1;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     object-fit: cover;
