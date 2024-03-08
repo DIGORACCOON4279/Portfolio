@@ -653,10 +653,10 @@ body{
 .mainContainer .projectsContainer .projects .accordion .sectionAccordion p{
     font-family: var(--fontFamily);
     color:var(--contentColor);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: var(--RegularWeight);
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 30px;
     text-align: left;
     padding: 20px;
     border-radius: 10px;
