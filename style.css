@@ -793,7 +793,6 @@ body{
 
 .mainContainer .technologiesContainer{
     width:85%;
-    max-width: 85%;
     margin:150px auto;
     width: auto;
     display: flex;
@@ -814,7 +813,6 @@ body{
 .mainContainer .technologiesContainer .toolTechnology .design{
     position: relative;
     cursor: pointer;
-    border-radius: 20px;
     box-shadow:0px 0px 20px 2px #000000;
 }
 .mainContainer .technologiesContainer .toolTechnology .design .backgroundFront .frontDesign,
@@ -828,11 +826,12 @@ body{
     width:100%;
 }
 .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack{
+    width:100%;
     position: absolute;
     top:0px;
     clip-path: circle(0.3% at 100% 0);
     opacity:0;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .design:hover .backgroundBack{
@@ -844,15 +843,15 @@ body{
 .mainContainer .technologiesContainer .toolTechnology .frontend{
     position: relative;
     cursor: pointer;
-    border-radius: 20px;
     box-shadow:0px 0px 20px 2px #000000;
 }
 .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundBack{
+    width:100%;
     position: absolute;
     top:0px;
     clip-path: circle(2.9% at 50% 50%);
     opacity:0;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .frontend:hover .backgroundBack{
@@ -863,15 +862,15 @@ body{
 .mainContainer .technologiesContainer .toolTechnology .backend{
     position: relative;
     cursor: pointer;
-    border-radius: 20px;
     box-shadow:0px 0px 20px 2px #000000;
 }
 .mainContainer .technologiesContainer .toolTechnology .backend .backgroundBack{
+    width:100%;
     position: absolute;
     top:0px;
     clip-path: circle(2.9% at 50% 50%);
     opacity:0;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .backend:hover .backgroundBack{
@@ -882,15 +881,15 @@ body{
 .mainContainer .technologiesContainer .toolTechnology .tools{
     position: relative;
     cursor: pointer;
-    border-radius: 20px;
     box-shadow:0px 0px 20px 2px #000000;
 }
 .mainContainer .technologiesContainer .toolTechnology .tools .backgroundBack{
+    width:100%;
     position: absolute;
     top:0px;
     clip-path: circle(4.4% at 0 100%);
     opacity:0;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: all .3s ease;
 }
 .mainContainer .technologiesContainer .toolTechnology .tools:hover .backgroundBack{
@@ -903,7 +902,6 @@ body{
 
 .mainContainer .aboutMeContainer{
     width:85%;
-    max-width: 85%;
     margin:150px auto;
     display: flex;
     flex-direction: column;
@@ -987,11 +985,14 @@ body{
 }
 .mainContainer .aboutMeContainer .figure .icons{
     width:50%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    overflow: hidden;
     margin: auto;
+    gap:25px;
 }
 .mainContainer .aboutMeContainer .figure .icons .knowledge{
     width: 75%;
@@ -999,13 +1000,36 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 10px 20px;
     font-size: 0.8rem;
     color:var(--colorTitle);
     letter-spacing: 2px;
     border-radius: 10px;
     background:linear-gradient(to top , #252525 0%, #000000) ;
     box-shadow: 0 0 20px 2px #000000;
+    animation: knowledge 10000ms linear infinite;
+}
+@keyframes knowledge{
+    0%{
+        transform: translateY(-750%);
+        opacity: 0.0;
+    }
+    25%{
+        transform: translateY(-600%);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-450%);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(-300%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-150%);
+        opacity: 0.0;
+    }
 }
 .mainContainer .aboutMeContainer .figure .icons .knowledge img{
     width: auto;
@@ -1072,9 +1096,7 @@ body{
 .footerContainer{
     width:100%;
     margin:150px auto 0px;
-    /* overflow: hidden; */
 }
-
 .footerContainer .contactMe{
     width:85%;
     margin:150px auto;
@@ -1091,7 +1113,6 @@ body{
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs{
     position:relative;
-    /* overflow: hidden; */
 }
 .footerContainer .contactMe .manSittingContactMe .dialogs .item{
     position:absolute;
@@ -1224,8 +1245,19 @@ body{
     .mainContainer .heroSection .info .cta{
         flex-wrap: wrap;
     }
+    .mainContainer .technologiesContainer .toolTechnology{
+        flex-direction: column;
+    }
     .footerContainer .contactMe{
         justify-content: center;
+    }
+}
+
+/* Screen max 1120px */
+
+@media screen and (max-width: 1120px){
+    .footerContainer .contactMe .infoContact{
+        width:55%;
     }
 }
 
@@ -1234,19 +1266,34 @@ body{
 @media screen and (max-width: 1100px){
     .mainContainer .aboutMeContainer .description,
     .mainContainer .aboutMeContainer .figure{
-        max-width: 85%;
+        width: 75%;
+        display: flex;
         flex-direction: column;
+        text-align: center;
         gap:80px;
     }
     .mainContainer .aboutMeContainer .description .containerInfo{
         flex-direction: column-reverse;
         flex-wrap: wrap;
         padding-right: 20px;
+        align-items: flex-start;
         padding-top: 20px;
     }
+    .mainContainer .aboutMeContainer .description .containerInfo .whoIAm p{
+        text-align: left;
+    }
     .mainContainer .aboutMeContainer .figure .icons{
-        width:68%;
         align-items: center;
+        overflow: hidden;
+    }
+    .mainContainer .aboutMeContainer .description .titleSection,
+    .mainContainer .aboutMeContainer .description .containerInfo,
+    .mainContainer .aboutMeContainer .figure .icons,
+    .mainContainer .aboutMeContainer .figure .images{
+        width:100%;
+    }
+    .mainContainer .aboutMeContainer .figure .icons .knowledge{
+        width:100%;
     }
     .mainContainer .aboutMeContainer .description .containerInfo .myPic{
         width:120px;
@@ -1257,8 +1304,14 @@ body{
         border: 2px solid transparent;
         align-self: center;
     }
-    .mainContainer .aboutMeContainer .figure .images .blueSquare{
-        width:70%;
+    .mainContainer .technologiesContainer{
+        width:65%;
+    }
+    .mainContainer .technologiesContainer .toolTechnology .design,
+    .mainContainer .technologiesContainer .toolTechnology .frontend,
+    .mainContainer .technologiesContainer .toolTechnology .backend,
+    .mainContainer .technologiesContainer .toolTechnology .tools{
+        width:100%;
     }
     .footerContainer .contactMe{
         flex-direction:column;
@@ -1312,13 +1365,21 @@ body{
         width: 80%;
     }
     .mainContainer .technologiesContainer{
-        width:95%;
+        width:80%;
     }
     .mainContainer .aboutMeContainer{
         width:95%;
     }
+    .mainContainer .aboutMeContainer .description,
+    .mainContainer .aboutMeContainer .figure{
+        width: 85%;
+    }
     .footerContainer .contactMe{
         width:95%;
+    }
+    .footerContainer .contactMe .manSittingContactMe,
+    .footerContainer .contactMe .infoContact{
+        width:85%;
     }
 }
 
@@ -1331,16 +1392,9 @@ body{
     .mainContainer .heroSection .info .cta{
         width:70%;
     }
-
-    .mainContainer .aboutMeContainer{
-        max-width: 100%;
-    }
     .mainContainer .aboutMeContainer .description,
     .mainContainer .aboutMeContainer .figure{
-        max-width: 100%;
-    }
-    .mainContainer .aboutMeContainer .figure .images .blueSquare{
-        width:75%;
+        width: 85%;
     }
     .footerContainer .contactMe .manSittingContactMe,
     .footerContainer .contactMe .infoContact{
@@ -1356,9 +1410,6 @@ body{
     }
     .mainContainer .heroSection .info .cta{
         width:85%;
-    }
-    .mainContainer .aboutMeContainer .figure .images .blueSquare{
-        width:80%;
     }
 }
 
@@ -1388,6 +1439,25 @@ body{
     .mainContainer .projectsContainer .projects .projectSingle{
         gap:40px;
     }
+    .mainContainer .technologiesContainer{
+        width:95%;
+    }
+    .mainContainer .technologiesContainer .toolTechnology .design,
+    .mainContainer .technologiesContainer .toolTechnology .frontend,
+    .mainContainer .technologiesContainer .toolTechnology .backend,
+    .mainContainer .technologiesContainer .toolTechnology .tools{
+        width:auto;
+    }
+    .mainContainer .technologiesContainer .toolTechnology .design .backgroundFront,
+    .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack,
+    .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundFront,
+    .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundBack,
+    .mainContainer .technologiesContainer .toolTechnology .backend .backgroundFront,
+    .mainContainer .technologiesContainer .toolTechnology .backend .backgroundBack,
+    .mainContainer .technologiesContainer .toolTechnology .tools .backgroundFront,
+    .mainContainer .technologiesContainer .toolTechnology .tools .backgroundBack{
+        border-radius: 20px;
+    }
     .mainContainer .technologiesContainer .toolTechnology .design .backgroundFront .frontDesign,
     .mainContainer .technologiesContainer .toolTechnology .design .backgroundBack .backDesign,
     .mainContainer .technologiesContainer .toolTechnology .frontend .backgroundFront .frontFrontend,
@@ -1396,11 +1466,14 @@ body{
     .mainContainer .technologiesContainer .toolTechnology .backend .backgroundBack .backBackend,
     .mainContainer .technologiesContainer .toolTechnology .tools .backgroundFront .frontTools,
     .mainContainer .technologiesContainer .toolTechnology .tools .backgroundBack .backTools{
+        width:100%;
+    }
+    .mainContainer .aboutMeContainer{
         width:95vw;
     }
     .mainContainer .aboutMeContainer .description,
     .mainContainer .aboutMeContainer .figure{
-        width:95vw;
+        width:100%;
     }
     .mainContainer .aboutMeContainer .figure .icons{
         width:100%;
@@ -1409,9 +1482,6 @@ body{
     .mainContainer .aboutMeContainer .figure .icons .knowledge,
     .mainContainer .aboutMeContainer .figure .images{
         width:100%;
-    }
-    .mainContainer .aboutMeContainer .figure .images .blueSquare{
-        width:60%;
     }
     .mainContainer .aboutMeContainer .figure .images .manLaptop{
         width:70%;
