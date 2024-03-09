@@ -118,7 +118,7 @@ body{
     cursor: pointer;
 }
 .overlay .svg {
-    width:30%;
+    width:100%;
     padding: 1em;
     fill: black;
 }
