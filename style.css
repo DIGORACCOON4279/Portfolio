@@ -69,6 +69,7 @@ body{
     letter-spacing: 5px;
     font-family: var(--fontFamily);
     line-height: 150px;
+    margin-bottom: 30px;
 }
 .mainOverlay{
     background-color: white;
