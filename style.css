@@ -33,7 +33,7 @@
     --contentText:0.8rem;
 
 }
-*{
+*, *::before, *::after{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -261,11 +261,39 @@ body{
     border-radius: 50%;
     cursor: pointer;
     padding: 0;
+
     transform: scale(100%);
     transition: 0.3s ease-in-out;
 }
 .mainContainer .arrowUp .arrowUpIcon:hover{
     transform: scale(95%);
+}
+.mainContainer .arrowUp a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .arrowUp a .tooltip{
+    position: absolute;
+    width:max-content;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    border:1px solid rgb(39, 39, 39);
+    border-radius: 2.5px;
+    transform:translateX(-80%);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+.mainContainer .arrowUp:hover a .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transform:translateX(-110%);
 }
 
 /* Hero Section Contact me */
@@ -280,9 +308,36 @@ body{
 }
 .mainContainer .heroSection .info .socialMedia .navSocialMedia ul li{
     list-style-type: none;
+    position: relative;
 }
 .mainContainer .heroSection .info .socialMedia .navSocialMedia ul li .itemIcon{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .heroSection .info .socialMedia .navSocialMedia ul li .itemIcon .tooltip{
+    position: absolute;
+    bottom:-25%;
+    width:max-content;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    border:1px solid rgb(39, 39, 39);
+    border-radius: 2.5px;
+    transform:translateY(50%);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+.mainContainer .heroSection .info .socialMedia .navSocialMedia ul li:hover .itemIcon .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(130%);
 }
 
 /* Main-container */
@@ -776,9 +831,40 @@ body{
     justify-content: space-around;
     align-items: center;
     gap:20px;
+    cursor:pointer;
 }
-.mainContainer .projectsContainer .projects .accordion .technologiesUsed .brandTechnologies .iconTechnologies{
+.mainContainer .projectsContainer .projects .accordion .technologiesUsed .brandTechnologies div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .projectsContainer .projects .accordion .technologiesUsed .brandTechnologies div .iconTechnologies{
     width:30px;
+}
+.mainContainer .projectsContainer .projects .accordion .technologiesUsed .brandTechnologies div .tooltip{
+    position: absolute;
+    top:-20%;
+    width:max-content;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 2.5px;
+    border:1px solid rgb(39, 39, 39);
+    transform:translateY(-50%);
+    z-index: 9;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+.mainContainer .projectsContainer .projects .accordion .technologiesUsed .brandTechnologies div:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(-130%);
 }
 .mainContainer .projectsContainer .projects .accordion .links{
     width:100%;
@@ -1265,9 +1351,37 @@ body{
 }
 .footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li{
     list-style-type: none;
+    position: relative;
 }
 .footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li .itemIcon{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li .itemIcon .tooltip{
+    position: absolute;
+    bottom:-25%;
+    width:max-content;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 2.5px;
+    border:1px solid rgb(39, 39, 39);
+    transform:translateY(50%);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+.footerContainer .contactMe .infoContact .socialMedia .navSocialMedia ul li:hover .itemIcon .tooltip{
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(130%);
+
 }
 .footerContainer .contactMe .infoContact .socialMedia .fadeBallSection{
     position: relative;
