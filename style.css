@@ -87,7 +87,6 @@ body{
     padding: 1em;
     fill: white;
 }
-
 .overlay {
     background-color: black;
     color: white;
@@ -275,7 +274,7 @@ body{
 .mainContainer .arrowUp a .tooltip{
     position: absolute;
     width:max-content;
-    color: white;
+    color: var(--contentColor);
     padding: 5px 10px;
     font-size: 0.5rem;
     letter-spacing: 1px;
@@ -319,7 +318,7 @@ body{
     position: absolute;
     bottom:-25%;
     width:max-content;
-    color: white;
+    color: var(--contentColor);
     padding: 5px 10px;
     font-size: 0.5rem;
     letter-spacing: 1px;
@@ -845,7 +844,7 @@ body{
     position: absolute;
     top:-20%;
     width:max-content;
-    color: white;
+    color: var(--contentColor);
     padding: 5px 10px;
     font-size: 0.5rem;
     letter-spacing: 1px;
@@ -1128,6 +1127,9 @@ body{
 .mainContainer .aboutMeContainer .description .containerInfo .whoIAm p{
     font-size: 0.8rem;
 }
+.mainContainer .aboutMeContainer .description .containerInfo .whoIAm p span{
+    color:var(--primaryColor);
+}
 .mainContainer .aboutMeContainer .description .containerInfo .myPic{
     width:max-content;
     aspect-ratio: 1/1.2;
@@ -1362,7 +1364,7 @@ body{
     position: absolute;
     bottom:-25%;
     width:max-content;
-    color: white;
+    color: var(--contentColor);
     padding: 5px 10px;
     font-size: 0.5rem;
     letter-spacing: 1px;
