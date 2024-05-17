@@ -139,7 +139,7 @@ body{
     z-index: 99;
 }
 .navbar .navbarMenu{
-    width: 85%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -316,17 +316,16 @@ body{
 }
 .mainContainer .heroSection .info .socialMedia .navSocialMedia ul li .itemIcon .tooltip{
     position: absolute;
-    bottom:-25%;
     width:max-content;
     color: var(--contentColor);
     padding: 5px 10px;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     letter-spacing: 1px;
     text-align: center;
-    background-color: black;
+    background-color: #000000;
     visibility: hidden;
     opacity: 0;
-    border:1px solid rgb(39, 39, 39);
+    border:1px solid #272727;
     border-radius: 2.5px;
     transform:translateY(50%);
     transform-origin: center;
