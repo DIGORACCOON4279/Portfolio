@@ -6,7 +6,7 @@
 
 Este es mi portfolio desarrollador web frontend & diseñador UX/UI. El portfolio cuenta con tres proyectos: dos Ecommerce y 
 una pagina de match entre empresas de tecnologia y desarrolladores web y diseñadores UX/UI.</br>
-tambien cuenta con link a mi resume & cover letter, perfil a behance de diseño UX/UI, repositorio de github & perfil en LinkeIin</br>
+Tambien cuenta con link a mi resume & cover letter, perfil a behance de diseño UX/UI, repositorio de github & perfil en LinkeIin</br>
 La pagina tiene 4 secciones: </br>
 
 Projects: 3 proyectos explicados, tecnologias usadas aprendidas, videos de demostracion en cel y laptop y links a figma, repositorio de github y al sitio desplegado en Netlify</br>
