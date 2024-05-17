@@ -15,7 +15,7 @@ La pagina tiene 4 secciones: </br>
 📨Contact me: Resume, LinkedIn, Github y Behance </br>
 
 
-👀Acerca de mis proyectos algunas imagenes:
+👀Acerca de mis proyectos algunas imagenes:</br>
 ✔DeLord</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f18ad5ec-f66b-4753-9bc5-ab594a1f66e0)</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/de8d1594-2397-4406-894c-56b3096ac375)</br>
