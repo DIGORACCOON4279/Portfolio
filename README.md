@@ -12,8 +12,10 @@ La pagina tiene 4 secciones: </br>
 🚀Projects: 3 proyectos explicados, tecnologias usadas aprendidas, videos de demostracion en cel y laptop y links a figma, repositorio de github y al sitio desplegado en Netlify</br>
 💻Technologies: tecnologias que han sido aprendidas. </br>
 😎About me: una seccion enfocada en hablar de mi perfil profesional y preferencias & </br>
-📨Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
+📨Contact me: Resume, LinkedIn, Github y Behance </br>
 
+
+👀Acerca de mis proyectos algunas imagenes:
 ✔DeLord</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f18ad5ec-f66b-4753-9bc5-ab594a1f66e0)</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/de8d1594-2397-4406-894c-56b3096ac375)</br>
