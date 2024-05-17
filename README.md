@@ -9,10 +9,10 @@ una pagina de match entre empresas de tecnologia y desarrolladores web y diseña
 Tambien cuenta con link a mi resume & cover letter, perfil a behance de diseño UX/UI, repositorio de github & perfil en LinkeIin</br>
 La pagina tiene 4 secciones: </br>
 
-Projects: 3 proyectos explicados, tecnologias usadas aprendidas, videos de demostracion en cel y laptop y links a figma, repositorio de github y al sitio desplegado en Netlify</br>
-Technologies: tecnologias que han sido aprendidas. </br>
-About me: una seccion enfocada en hablar de mi perfil profesional y preferencias & </br>
-Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
+🚀Projects: 3 proyectos explicados, tecnologias usadas aprendidas, videos de demostracion en cel y laptop y links a figma, repositorio de github y al sitio desplegado en Netlify</br>
+💻Technologies: tecnologias que han sido aprendidas. </br>
+😎About me: una seccion enfocada en hablar de mi perfil profesional y preferencias & </br>
+📨Contact me: mis redes sociales de mis trabajos y perfil profesional </br>
 
 ✔DeLord</br>
 ![image](https://github.com/DIGORACCOON4279/Portfolio/assets/88150970/f18ad5ec-f66b-4753-9bc5-ab594a1f66e0)</br>
